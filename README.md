@@ -5,10 +5,10 @@
 
 # Kurulumlar tamamlandiktan sonra
   - **Visual Studio Test Controller (VSTTController)** servisinin çalıştığından emin olun. Duruma göre "Log On" kısmından login olan kullanıcı bilgileri girilir.
-  - Ana bilgisayarda **"Computer Management"** -> **"Local Users and Groups"** açılır ve **"Group"** klasöründe **"TeamTestAgentService"**, **"TeamTestControllerAdmins"** ve **"TeamTestControllerUsers"** gruplarına test agent olarak bağlanacak bilgisayarların kullanıcıları eklenir. *Örneğin KKALE pcsinden kale kullanıcısı ile bağlanılacaksa kale kullanıcısı eklenir.*
+  - Ana bilgisayarda **"Computer Management"** -> **"Local Users and Groups"** açılır ve **"Group"** klasöründe **"TeamTestAgentService"**, **"TeamTestControllerAdmins"** ve **"TeamTestControllerUsers"** gruplarına test agent olarak bağlanacak bilgisayarların kullanıcıları eklenir. *Örneğin Sertunc pcsinden selen kullanıcısı ile bağlanılacaksa selen kullanıcısı eklenir.*
   - **"Test Controller Configuration Tool"** açılır ve **"This Account"** kısmına login olunan kullanıcı bilgileri girilir.
   - Daha sonra Visual Studio'dan test projesi açılır ve sol üst kısımdaki butonlardan **"Manage Test Controller"** (çekiç simgesi) tıklanır. Controller kısımından Bilgisayar adı seçilir, yoksa elle girilir.
-  - Ardindan yük yapacak olan bilgisayarlara test agent kurulur ve **"Test Agent Configuration Tool"** açılır. **"Run test agent as interactive process"** kısmına login olan kullanıcı bilgileri girilir. **"Register with Test Controller"** kısmı checklenir ve **Controller pc** adi girilir. Örneğin KALESERVER:6901 ve "Apply Settings"e tıklanır. 
+  - Ardindan yük yapacak olan bilgisayarlara test agent kurulur ve **"Test Agent Configuration Tool"** açılır. **"Run test agent as interactive process"** kısmına login olan kullanıcı bilgileri girilir. **"Register with Test Controller"** kısmı checklenir ve **Controller pc** adi girilir. Örneğin SERTUNCSERVER:6901 ve "Apply Settings"e tıklanır. 
   - Tekrar Visual Studio'dan "Solution Items" altında bulunan kısımdan **.testsettings** dosyası açılır. **"Roles"** tabından **"Test Execution Method"** dropdowndan **"Remote Execution"** seçilir ve karşısında test controller seçilir. Aşağıda bulunan **Roles** kısımında ise **<All agents on the controller ve yes** olmasına dikkat edin ve Apply tıklayın.
   - Ve testi çalıştırın.
 
